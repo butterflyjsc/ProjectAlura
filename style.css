@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'oi';
+    src: url( Explora-Regular.ttf)
+}
+
+@font-face {
+    font-family: 'oo';
+    src: url(MonteCarlo-Regular.ttf)
+}
+
+@font-face {
+    font-family: ' text ';
+    src: url(LuxuriousRoman-Regular.ttf)
+}
+
+
+
+.texto-container p {
+    font-family: 'text';
+}
+
+.chamada h3 {
+    font-family: 'oo';
+    font-family: 20px;
+    font-weight: 200;
+}
+
+.chamada-texto h1{
+    font-family: 'oi';
+    font-size: 80px;
+}
+
+.chamada-texto p {
+    font-family: 'oo';
+    font-size: 30px;
+}
+
+header h1 {
+    font-family: 'oi';
+}
+
+
+body {
+    color: white;
+    background: #323131; 
+    margin: 0px;
+    font-family: "Chakra Petch", sans-serif;
+    margin-bottom: 100px;
+}
+
+.oi {
+display: block;
+}
+
+header {
+display: flex;
+justify-content: space-between ;
+padding: 20px;
+}
+
+header h1 {
+    font-size: 40px;
+    color: #dda8a0;
+}
+
+header nav a {
+    font-family: 'oi';
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+    list-style: none;
+    display: inline;
+    padding: 20px;
+    font-size: 32px;
+    text-decoration: none;
+    color: #dda8a0;
+}
+
+header nav a:hover {
+    color: white;
+}
+
+.ajeita {
+    background: #dda8a0;
+     padding-bottom: 10px;
+    padding-top: 45px;
+    display: flex;
+    flex-direction: inline;
+    justify-content: center;
+    padding-right: 20px;
+}
+
+
+/* styles.css */
+
+
+.text {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.texto-container {
+    padding: 15px;
+}
+
+/* Esconde o texto */
+#ler-mais {
+    display: none;
+}
+
+.conteudo-extra {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.botao-ler-mais {
+    display: inline-block;
+    cursor: pointer;
+    color: #323131; 
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.texto-esconder {
+    display: none;
+}
+
+#ler-mais:checked ~ .conteudo-extra {
+    max-height: 500px;}
+
+#ler-mais:checked ~ .botao-ler-mais .texto-mostrar {
+    display: none;
+}
+
+#ler-mais:checked ~ .botao-ler-mais .texto-esconder {
+    display: inline;
+}
+
+/* Esconde o texto */
+
+.texto-mostrar {
+    font-family: 'text';
+    font-size: 20px;
+}
+
+.texto-esconder{
+    font-family: 'text';
+}
+
+.text {
+    font-family: 'oo';
+    font-size: 30px;
+    font-weight: 200;
+    margin-top: 7px;
+}
+
+.atores {
+    display: flex;
+    flex-direction: inline;
+    overflow-x: auto;
+    gap: 10px;
+
+}
+
+.ator {
+margin-top: 10px;
+display: flex;
+flex-direction: column;
+}
+
+.ator img{
+    height: 90px;
+    width: auto;
+    object-fit: contain;
+}
+
+.ator h4{
+    font-family: 'text';
+    font-size: 15px;
+    font-weight: 200;
+    margin-top: 7px;
+
+}
+
+
+
+.chamada-texto {
+    margin-right: 5%;
+}
+
+
+p {
+    font-size: 20px;
+}
+
+.video{
+    display: block;
+}
+
+.play {
+    display: none;
+}
+
+
+
+.categoria-videos {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+
+}
+
+
+
+.categoria {
+    padding-left: 20px;
+    padding-right: 20px;
+ 
+}
+
+.categoria-videos img {
+    opacity: 0.5 ;
+    height: 200px;
+}
+
+.categoria-videos img:hover {
+    opacity: 1.0;
+    border: 3px solid #dda8a0;
+}
+
+.categoria h2 {
+    font-family: 'oi';
+    font-size: 50px;
+    font-weight: bold;
+    color: #dda8a0;
+    text-align: center;
+    padding: 30px;
+} 
+
+@media screen and (max-width: 770px) {
+
+    .ajeita{
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        padding: 10px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 770px) {
+
+    header h1{
+        padding: 15px;
+        font-size: 50px;
+        text-align: center;
+    
+    }
+    .oi {
+        display: none;
+    }
+
+    .video {
+        display: none;
+    }
+
+    .play {
+        display: block;
+
+    }
+    
+    .chamada-texto {
+        margin-right: 0%;
+    }
+    
+    .chamada-texto p {
+        font-size: 20px;
+    }
+
+    .chamada-texto h1 {
+        font-size: 30px;
+    }
+
+    .texto-container{
+        display: none ;
+    }
+
+    footer {
+        flex: 100%;
+    }
+}
+
+footer {
+    margin-top: 20px;
+    background-color: #dda8a0;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
