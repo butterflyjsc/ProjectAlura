@@ -49,9 +49,7 @@ header h1 {
 body {
     color: white;
     background: #323131; 
-    margin: 0px;
-    font-family: "Chakra Petch", sans-serif;
-    margin-bottom: 100px;
+    height: 100vh;
 }
 
 .oi {
@@ -127,7 +125,7 @@ header nav a:hover {
     cursor: pointer;
     color: #323131; 
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 0;
 }
 
 .texto-esconder {
@@ -149,11 +147,12 @@ header nav a:hover {
 
 .texto-mostrar {
     font-family: 'text';
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .texto-esconder{
     font-family: 'text';
+    font-size: 15px;
 }
 
 .text {
@@ -302,9 +301,13 @@ p {
 }
 
 footer {
-    margin-top: 20px;
+
+    font-family: 'oo';
+    font-size: 25px;
+    margin-top: 50px;
     background-color: #dda8a0;
     color: white;
     text-align: center;
     padding: 30px;
+
 }
